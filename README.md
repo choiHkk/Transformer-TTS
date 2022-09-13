@@ -31,10 +31,15 @@
   * -c : checkpoint path with step number
 8. (OPTIONAL) `tensorboard --logdir=outdir/logdir`
 
+
 ## Tensorboard losses
+![transformer-tts-tensorboard-trn-loss](https://user-images.githubusercontent.com/69423543/189803702-a56971a3-8078-4470-be0d-d95c7eeebe78.png)
+![transformer-tts-tensorboard-val-loss](https://user-images.githubusercontent.com/69423543/189803715-edc7b558-6d8e-4f9e-99c8-27e1eb318e40.png)
 
 
 ## Tensorboard Stats
+![transformer-tts-tensorboard-lr](https://user-images.githubusercontent.com/69423543/189803727-38cc146e-7fb1-450d-a13e-15ad97c67dc8.png)
+![transformer-tts-tensorboard-mel](https://user-images.githubusercontent.com/69423543/189803734-b0294e9a-e6e2-4300-9e6f-7cee238332eb.png)
 
 
 ## Reference
