@@ -1,6 +1,6 @@
 ## Introduction
 1. Tacotron2 오픈 소스와 pytorch 기본 내장 transformer를 활용하여 Transformer-TTS를 간단 구현하고 한국어 데이터셋(KSS)을 사용해 빠르게 학습합니다.
-2. 본 레포지토리에서 Tacotron2에서 제안하는 BCE loss를 그대로 사용하면 stop token이 제대로 예측되지 않기 때문에 Transformer-TTS 논문에서 제안하는 coefficient를 사용하여 Stop Token Layer를 학습합니다..
+2. 본 레포지토리에서 Tacotron2에서 제안하는 BCE loss를 그대로 사용하면 stop token이 제대로 예측되지 않기 때문에 Transformer-TTS 논문에서 제안하는 coefficient를 사용하여 Stop Token Layer를 학습합니다.
 3. conda 환경으로 진행해도 무방하지만 본 레포지토리에서는 docker 환경만 제공합니다. 기본적으로 ubuntu에 docker, nvidia-docker가 설치되었다고 가정합니다.
 4. GPU, CUDA 종류에 따라 Dockerfile 상단 torch image 수정이 필요할 수도 있습니다.
 5. 별도의 pre-processing 과정은 필요하지 않습니다.
