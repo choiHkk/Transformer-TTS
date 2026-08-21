@@ -51,7 +51,7 @@ class TextMelLoader(torch.utils.data.Dataset):
             melspec = torch.from_numpy(melspectrogram(audio_norm.squeeze(0), self.hparams))
             melspec = torch.squeeze(melspec, 0)
         else:
-            melspec = torch.from_numpy(np.load(filename))
+            melspec = torch.from_numpy(np.load(filename, allow_pickle=True))
             assert melspec.size(0) == self.n_mel_channels, (
                 'Mel dimension mismatch: given {}, expected {}'.format(
                     melspec.size(0), self.n_mel_channels))
